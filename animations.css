@@ -60,3 +60,87 @@
     filter: blur(5px)  saturate(35%);
     
 }
+
+.ex-8-img{
+    transition: filter , border-radius 4s;
+}
+
+.ex-8-img:hover{
+    filter: hue-rotate(60deg) brightness(1.5);
+    border-radius: 20px;
+}
+
+.ex-9-img{
+    transition: border-radius 5s, filter 4s, transform 2s;
+}
+.ex-9-img:hover{
+    filter: hue-rotate(40deg) contrast(90%) blur(2px) ;
+    border-radius: 40px;
+    transform: scale(1.25);
+}
+
+.ex-10-icon:hover{
+animation: spin 2s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+
+
+@keyframes spin {
+    100% {
+        rotate: 1turn;
+    }
+}
+
+.ex-11-icon:hover{
+    animation: half-spin 5s;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 1.0, 1.0);
+    /* animation-direction: alternate; */
+    animation-iteration-count: infinite;
+}
+
+/* @keyframes half-spin {
+    
+    
+    
+    100% {
+        rotate: 0.75turn;
+    }
+} */
+
+@keyframes half-spin {
+
+    75% {
+        rotate: 0.75turn;
+    }
+
+    100% {
+        rotate: 0turn;
+    }
+}
+
+
+.ex-12-top-white{
+    animation-duration: 5s;
+    animation: white-button1;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+ .ex-12-bottom-white{
+    animation: white-button2 5s;
+    /* animation-direction: alternate; */
+    animation-iteration-count: infinite;
+ }
+
+
+@keyframes white-button1 {
+    100% {
+       right: 0% ;
+    }
+}
+
+@keyframes white-button2 {
+    100% {
+        left: 0% ;
+    }
+}

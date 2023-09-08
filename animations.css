@@ -106,7 +106,7 @@ animation-timing-function: linear;
     100% {
         rotate: 0.75turn;
     }
-} */
+}  */
 
 @keyframes half-spin {
 
@@ -120,27 +120,59 @@ animation-timing-function: linear;
 }
 
 
-.ex-12-top-white{
-    animation-duration: 5s;
-    animation: white-button1;
+
+.ex-12-button:hover > .ex-12-top-white{
+    animation-name: white-button-1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
- .ex-12-bottom-white{
-    animation: white-button2 5s;
-    /* animation-direction: alternate; */
+
+@keyframes white-button-1 {
+
+    0%{
+        left: 10%;
+        right: 60%;
+
+    }
+
+    100%{
+        
+        right: 0%;
+        left: 70%;
+    }
+}
+
+.ex-13-button:hover > .ex-13-bottom-white {
+    animation-name: white-button-2;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
     animation-iteration-count: infinite;
- }
+}
 
+@keyframes white-button-2 {
 
-@keyframes white-button1 {
-    100% {
-       right: 0% ;
+    0%{
+        left: 50%;
+        right: 20%;
+
+    }
+
+    100%{
+        
+        right: 70%;
+        left: 0%;
     }
 }
 
-@keyframes white-button2 {
-    100% {
-        left: 0% ;
-    }
+.ex-13-button:hover > .ex-13-top-white{
+    animation-name: white-button-1;
+    animation-duration: 4s;
+    animation-timing-function: linear;
 }
+
+@keyframes white-button-1 
+
+    

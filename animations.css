@@ -1,0 +1,25 @@
+.ex-1-square{
+    background-color: rgba(255, 0, 0, 0);
+    transition:background-color 2s;
+    
+}
+
+.ex-1-square:hover {
+    background-color: red;
+}
+
+.ex-2-square{
+    transition: transform 2s;
+}
+
+.ex-2-square:hover{
+    transform: scaleX(3);
+}
+
+.ex-3-square{
+    transition: border-radius 2s;
+}
+
+.ex-3-square:hover{
+    border-radius: 50%;
+}

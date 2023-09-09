@@ -123,7 +123,7 @@ animation-timing-function: linear;
 
 .ex-12-button:hover > .ex-12-top-white{
     animation-name: white-button-1;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-timing-function: linear;
     animation-direction: alternate;
     animation-iteration-count: infinite;
@@ -144,7 +144,7 @@ animation-timing-function: linear;
     }
 }
 
-.ex-13-button:hover > .ex-13-bottom-white {
+.ex-12-button:hover > .ex-12-bottom-white{
     animation-name: white-button-2;
     animation-duration: 2s;
     animation-timing-function: linear;
@@ -155,24 +155,88 @@ animation-timing-function: linear;
 @keyframes white-button-2 {
 
     0%{
-        left: 50%;
-        right: 20%;
+            left: 50%;
+            right: 20%;
+    
+        }
+    
+        100%{
+            
+            right: 70%;
+            left: 0%;
+        }
+}
+
+
+.ex-13-button:hover > .ex-13-top-white{
+    animation-name: white-button-1-complete;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+}
+
+@keyframes white-button-1-complete{
+
+     0% {
+        left: 10%;
+        right: calc((100% - 10%)- -30px);
+        top: -10px;
+        bottom: 60px;
+
+    
+
+    }
+
+    30% {
+
+        left: calc(100% - 30px);
+        right: -30px;
+        top: -10px;
+        bottom: calc(100%- 10px);
+
+    }
+
+    40%{
+        right: -30px;
+        bottom: -10px;
+        left: calc(100% - 30px);
+        top:  calc(100% - 10px);
+
+    }
+
+    80%{    
+        left: -30px;
+        bottom: -10px;
+        right:calc(100% - 30px);
+        top:  calc(100% - 10px);
+
+    }
+
+    90%{
+        left: -30px;
+        bottom: calc(100%- 10px);
+        right:calc(100% - 30px);
+        top: -10px;
 
     }
 
     100%{
-        
-        right: 70%;
-        left: 0%;
+        left: 10%;
+        right: calc((100% - 10%)- -30px);
+        top: -10px;
+        bottom: 60px;
+
+
+
     }
 }
 
-.ex-13-button:hover > .ex-13-top-white{
-    animation-name: white-button-1;
-    animation-duration: 4s;
+
+.ex-13-button:hover > .ex-13-bottom-white {
+    animation-name: white-button-2-complete;
+    animation-duration: 2s;
     animation-timing-function: linear;
 }
 
-@keyframes white-button-1 
+
 
     

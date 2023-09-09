@@ -12,7 +12,7 @@
     transition: transform 2s;
 }
 
-.ex-2-square:hover{
+.ex-2-square:active{
     transform: scaleX(3);
 }
 
@@ -32,7 +32,7 @@
 }
 
 .ex-5-square{
-    transition: transform ;
+    transition: transform 2s;
 }
 
 .ex-5-square:hover{

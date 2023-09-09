@@ -146,7 +146,7 @@ animation-timing-function: linear;
 
 .ex-12-button:hover > .ex-12-bottom-white{
     animation-name: white-button-2;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-timing-function: linear;
     animation-direction: alternate;
     animation-iteration-count: infinite;
@@ -170,7 +170,7 @@ animation-timing-function: linear;
 
 .ex-13-button:hover > .ex-13-top-white{
     animation-name: white-button-1-complete;
-    animation-duration: 6s;
+    animation-duration: 3s;
     animation-timing-function: linear;
 }
 
@@ -178,7 +178,7 @@ animation-timing-function: linear;
 
      0% {
         left: 10%;
-        right: calc((100% - 10%)- -30px);
+        right: calc((100% - 10%)- 60px);
         top: -10px;
         bottom: 60px;
 
@@ -233,10 +233,67 @@ animation-timing-function: linear;
 
 .ex-13-button:hover > .ex-13-bottom-white {
     animation-name: white-button-2-complete;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-timing-function: linear;
 }
 
 
 
-    
+@keyframes white-button-2-complete{
+
+    0% {
+    top:calc(100% - 10px);
+    bottom:-10px;
+    left:calc((100% - 20%) - 60px);
+    right:20%;
+
+
+   
+
+   }
+
+   30% {
+
+    top:calc(100% - 10px);
+    bottom:-10px;
+    left:-30px;
+    right:calc(100% - 30px);
+
+   }
+
+   40%{
+    top:-10px;
+    bottom:calc(100% - 10px);
+    left:-30px;
+    right:calc(100% - 30px);
+
+   }
+
+   80%{    
+    top:-10px;
+    bottom:calc(100% - 10px);
+    left:calc(100% - 30px);
+    right:-30px;
+
+
+   }
+
+   90%{
+    top:calc(100% - 10px);
+    bottom:-10px;
+    left:calc(100% - 30px);
+    right:-30px;
+
+   }
+
+   100%{
+    top:calc(100% - 10px);
+    bottom:-10px;
+    left:calc((100% - 20%) - 60px);
+    right:20%;
+
+
+
+
+   }
+}
